@@ -60,19 +60,20 @@ const SOCIAL_LINKS = [
 
 const HERO_IMG =
   "https://i.pinimg.com/736x/3c/5b/0d/3c5b0d5aca4c7a4692c038fb9b41a379.jpg";
+
 const PRODUCT_IMGS = [
   "https://themuze.in/cdn/shop/files/IMG-20250922-WA0034.jpg?v=1758789149&width=400",
-  "/src/assets/image2.webp",
-  "/src/assets/image3.webp",
-  "/src/assets/image4.webp",
-  "/src/assets/image5.webp",
-  "/src/assets/image6.webp",
-  "/src/assets/image7.webp",
-  "/src/assets/image8.avif",
-  "/src/assets/image9.webp",
-  "/src/assets/image10.avif",
-  "/src/assets/image11.jpg",
-  "/src/assets/image12.jpg",
+  "https://themuze.in/cdn/shop/files/IMG-20250925-WA0114.jpg?v=1758812867&width=400",
+  "https://themuze.in/cdn/shop/files/IMG-20250922-WA0182.jpg?v=1758714121&width=400",
+  "https://themuze.in/cdn/shop/files/IMG-20250922-WA0003.jpg?v=1758788104&width=360",
+  "https://themuze.in/cdn/shop/files/IMG-20250925-WA0147.jpg?v=1758813664&width=360",
+  "https://themuze.in/cdn/shop/files/IMG-20250922-WA0182.jpg?v=1758714121&width=360",
+  "https://themuze.in/cdn/shop/files/IMG-20250925-WA0117.jpg?v=1758813198&width=165",
+  "https://themuze.in/cdn/shop/files/IMG-20250922-WA0015.jpg?v=1759403566&width=165",
+  "https://themuze.in/cdn/shop/files/IMG-20250922-WA0034.jpg?v=1758789149&width=360",
+  "https://themuze.in/cdn/shop/files/IMG-20250925-WA0100.jpg?v=1758812496&width=165",
+  "https://themuze.in/cdn/shop/files/IMG-20250922-WA0177.jpg?v=1758704318&width=165",
+  "https://themuze.in/cdn/shop/files/IMG-20250925-WA0114.jpg?v=1758812867&width=165",
 ];
 
 const FAQS = [
