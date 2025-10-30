@@ -257,7 +257,7 @@ function App() {
       </div> */}
       {/* Hero Section */}
       <div
-        className=" relative overflow-hidden rounded-3xl shadow-2xl mx-4 md:mx-8 min-h-full my-14 "
+        className=" relative overflow-hidden rounded-3xl shadow-2xl mx-4 md:mx-8 px-5 min-h-full my-14 "
         style={{
           background:
             "linear-gradient(135deg, #192140 0%, #263159 50%, #2a3d6f 100%)",
