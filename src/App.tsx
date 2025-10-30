@@ -108,7 +108,7 @@ const FAQS = [
 function FAQSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
   return (
-    <section className="w-full max-w-3xl mx-auto mb-16 manrope">
+    <section className="w-full max-w-3xl mx-auto mb-16 manrope px-5">
       <h2
         className="text-3xl md:text-4xl font-bold mb-8 text-center"
         style={{ color: "#263159" }}
@@ -178,7 +178,7 @@ function App() {
             className="h-10 mr-2 drop-shadow-md"
           />
           <span
-            className="text-2xl tracking-tight font-bold"
+            className="text-2xl tracking-tight font-bold hidden md:block"
             style={{ color: "#F1F6F9", letterSpacing: "0.07em" }}
           >
             themuze
@@ -200,20 +200,20 @@ function App() {
           <input
             type="text"
             placeholder="Search..."
-            className="px-3 py-1.5 rounded-l-md border-none outline-none focus:outline-1 focus:outline-gold-400"
+            className="px-3 py-1.5 rounded-l-md border-none outline-none focus:outline-1 focus:outline-gold-400 hidden md:block"
             style={{ background: "#ebedee" }}
           />
           <button
-            className="px-3 py-1.5 font-semibold rounded-r-md transition shadow"
+            className="px-3 py-1.5 font-semibold rounded-r-md transition shadow hidden md:block"
             style={{ background: "#ffba41", color: "#263159" }}
           >
             Search
           </button>
           <button
-            className="ml-4 px-4 py-1.5 rounded-md font-semibold transition shadow-lg"
+            className="ml-4 md:px-4 md:py-1.5 px-2 py-1 rounded-md font-semibold transition shadow-lg"
             style={{ background: "#ffe8cf", color: "#263159" }}
           >
-            Sign up / Login
+            Sign up | Login
           </button>
         </div>
       </nav>
@@ -430,48 +430,52 @@ function App() {
 
       {/* Footer */}
       <footer
-        className="p-8 pt-10 mt-10 flex flex-col gap-6 w-full items-center rounded-t-2xl relative"
+        className="p-8 pt-10 mt-10 flex md:flex-col  gap-6 w-full items-center rounded-t-2xl relative"
         style={{ background: "#192140", color: "#F1F6F9" }}
       >
-        <div className="flex flex-col md:flex-row w-full max-w-6xl md:items-start justify-between gap-6 md:gap-0">
-          {/* Left: Brand + Links */}
-          <div className="flex-1 flex flex-col items-center md:items-start md:text-left">
-            <span className="font-extrabold text-2xl tracking-tight mb-3">
-              themuze
-            </span>
-            <div className="flex flex-col gap-1">
-              {FOOTER_LINKS_ADV.map((l) => (
-                <a
-                  key={l.text}
-                  href={l.url}
-                  className="text-sm underline text-[#ffe6b8] hover:text-[#ffba41] transition"
-                >
-                  {l.text}
-                </a>
-              ))}
+        <div className="flex flex-col md:flex-row  w-full max-w-6xl md:items-center justify-between gap-6 md:gap-0 ">
+          <div className=" flex md:gap-x-80  w-70%">
+            {/* Left: Brand + Links */}
+            <div className="flex-1 flex flex-col items-center md:items-start md:text-left">
+              <span className="font-extrabold text-2xl tracking-tight mb-3">
+                themuze
+              </span>
+              <div className="flex flex-col gap-1">
+                {FOOTER_LINKS_ADV.map((l) => (
+                  <a
+                    key={l.text}
+                    href={l.url}
+                    className="text-sm underline text-[#ffe6b8] hover:text-[#ffba41] transition"
+                  >
+                    {l.text}
+                  </a>
+                ))}
+              </div>
             </div>
-          </div>
 
-          {/* Center: Socials */}
-          <div className="flex-1 flex flex-col items-center justify-center md:items-center md:justify-center">
-            <div className="flex flex-row gap-6 mb-3 mt-2 md:mt-8">
-              {SOCIAL_LINKS.map((s) => (
-                <a
-                  key={s.name}
-                  href={s.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={s.name}
-                  className="hover:scale-110 transition"
-                >
-                  {s.icon}
-                </a>
-              ))}
+            {/* Center: Socials */}
+            <div className="flex-1 flex flex-col items-center justify-center md:items-center md:justify-center">
+              <div className="flex flex-row gap-6 mb-3 mt-2 md:mt-8">
+                {SOCIAL_LINKS.map((s) => (
+                  <a
+                    key={s.name}
+                    href={s.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={s.name}
+                    className="hover:scale-110 transition"
+                  >
+                    {s.icon}
+                  </a>
+                ))}
+              </div>
             </div>
           </div>
 
           {/* Right: Email */}
-          <div className="flex-1 flex flex-col items-center md:items-end justify-end">
+          <div>
+            <div className="flex-1 flex flex-col items-center md:items-end justify-end"></div>
+
             <div className="mb-2 text-lg font-semibold">
               Join our Email List
             </div>
@@ -497,16 +501,11 @@ function App() {
               </button>
             </form>
             <div
-              className="text-xs mt-3 text-right"
+              className="text-xs mt-3 md:text-right text-center"
               style={{ color: "#ffe6b8" }}
             >
               Exclusive offers & latest news.
             </div>
-          </div>
-        </div>
-        <div className="pt-10 pb-1 flex justify-center w-full">
-          <div className="font-semibold text-[#ffe6b8] text-base text-center w-full">
-            themuze.in 2025
           </div>
         </div>
       </footer>
