@@ -58,9 +58,10 @@ const SOCIAL_LINKS = [
   },
 ];
 
-const HERO_IMG = "/src/assets/Hero.jpg";
+const HERO_IMG =
+  "https://i.pinimg.com/736x/3c/5b/0d/3c5b0d5aca4c7a4692c038fb9b41a379.jpg";
 const PRODUCT_IMGS = [
-  "/src/assets/image1.webp",
+  "https://themuze.in/cdn/shop/files/IMG-20250922-WA0034.jpg?v=1758789149&width=400",
   "/src/assets/image2.webp",
   "/src/assets/image3.webp",
   "/src/assets/image4.webp",
@@ -173,7 +174,9 @@ function App() {
       >
         <div className="flex items-center gap-3">
           <img
-            src="/src/assets/logo.webp"
+            src={
+              "https://themuze.in/cdn/shop/files/Muze_430x_0373e838-54f0-430f-8b26-4c1d37f50886.webp?v=1759662461&width=500"
+            }
             alt="brand-logo"
             className="h-10 mr-2 drop-shadow-md"
           />
